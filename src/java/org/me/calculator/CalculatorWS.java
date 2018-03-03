@@ -22,6 +22,7 @@ public class CalculatorWS {
      */
     @WebMethod(operationName = "add")
     public int add(@WebParam(name = "i") int i, @WebParam(name = "j") int j) {
+        System.out.println("inicio de consumo de WS");
         int k = i+j;
         return k;
     }
